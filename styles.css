@@ -1,0 +1,107 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #E5D0CC;
+}
+
+#header {
+    display: flex;
+    width: 100vw;
+    height: 20vh;
+    align-items: center;
+    justify-content: center;
+    background: #BFACB5;
+}
+
+#header-h1 {
+    text-align: center;
+    font-size: 15vh;
+    color: #172121;
+    font-family: 'Oswald', sans-serif
+}
+
+#about-div {
+    width: 40vw;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background: #7F7B82;
+    position: relative;
+    top: 3vh;
+    left: 6vw;
+    border-radius: 2vh;
+    box-shadow: 2vh 2vh 2vh #1E1E21FF;
+}
+
+#about-inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#about-p {
+    font-weight: bold;
+    font-size: 2.5vh;
+}
+
+#about-h1{
+    color: #E6AF2E;
+    font-size: 5vh;
+    font-family: 'Oswald', sans-serif
+}
+
+#about-inner {
+    width: 95%;
+    height: 60%;
+    border: #E5D0CC .2vh solid;
+    border-radius: 2vh;
+}
+
+#about-p {
+    color: #172121;
+    margin: 5%;
+    font-family: 'Oswald', sans-serif
+}
+
+#skills {
+    width: 40vw;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #7F7B82;
+    position: relative;
+    left: 52vw;
+    top: -5vh;
+    border-radius: 2vh;
+    box-shadow: 2vh 2vh 2vh #1E1E21FF;
+}
+
+#projects {
+    width: 80vw;
+    height: 75vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    background: #7F7B82;
+    position: relative;
+    left: 5vw;
+    border-radius: 2vh;
+    box-shadow: 2vh 2vh 2vh #1E1E21FF;
+}
+
+#projects-header {
+    font-size: 5vh;
+}
+
+footer{
+    height: 20vh;
+}
