@@ -5,22 +5,28 @@
 }
 
 body{
-    background: #E5D0CC;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background: rgb(153,230,233);
+    background: linear-gradient(180deg, rgba(153,230,233,1) 9%, rgba(51,113,128,1) 33%, rgba(22,71,83,0.9836309523809523) 62%, rgba(10,14,65,1) 87%);
 }
 
 #header {
+    position: relative;
+    top: 30vh;
     display: flex;
     width: 100vw;
     height: 20vh;
     align-items: center;
     justify-content: center;
-    background: #BFACB5;
+    background: none;
 }
 
 #header-h1 {
     text-align: center;
     font-size: 15vh;
-    color: #172121;
+    color: #2d314b;
     font-family: 'Oswald', sans-serif
 }
 
@@ -31,12 +37,10 @@ body{
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    background: #7F7B82;
+    background: none;
     position: relative;
-    top: 3vh;
-    left: 6vw;
-    border-radius: 2vh;
-    box-shadow: 2vh 2vh 2vh #1E1E21FF;
+    top: 40vh;
+    left: 30vw;
 }
 
 #about-inner {
@@ -52,7 +56,7 @@ body{
 }
 
 #about-h1{
-    color: #E6AF2E;
+    color: #38f0cb;
     font-size: 5vh;
     font-family: 'Oswald', sans-serif
 }
@@ -60,28 +64,61 @@ body{
 #about-inner {
     width: 95%;
     height: 60%;
-    border: #E5D0CC .2vh solid;
     border-radius: 2vh;
 }
 
 #about-p {
-    color: #172121;
+    color: #dcf2eb;
     margin: 5%;
     font-family: 'Oswald', sans-serif
 }
 
 #skills {
-    width: 40vw;
-    height: 40vh;
+    width: 60vw;
+    height: 60vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #7F7B82;
+    flex-direction: column;
+    background: none;
     position: relative;
-    left: 52vw;
-    top: -5vh;
-    border-radius: 2vh;
-    box-shadow: 2vh 2vh 2vh #1E1E21FF;
+    left: 20vw;
+    top: 50vh;
+}
+
+#skills-inner {
+    height: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+#skills-h1 {
+    color: #38f0cb;
+    font-size: 5vh;
+    font-family: 'Oswald', sans-serif
+}
+
+section[id*= "skills"]{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 3vw;
+}
+
+img {
+    width: 20vh;
+    height: 20vh;
+}
+
+p[id*= "skill"]{
+    font-size: 2.5vh;
+    color: #dcf2eb;
+    margin: 5%;
+    font-family: 'Oswald', sans-serif
 }
 
 #projects {
@@ -91,9 +128,10 @@ body{
     justify-content: center;
     flex-direction: row;
     align-items: center;
-    background: #7F7B82;
+    background: #959296;
     position: relative;
-    left: 5vw;
+    left: 10vw;
+    top: 100vh;
     border-radius: 2vh;
     box-shadow: 2vh 2vh 2vh #1E1E21FF;
 }
@@ -102,6 +140,3 @@ body{
     font-size: 5vh;
 }
 
-footer{
-    height: 20vh;
-}
