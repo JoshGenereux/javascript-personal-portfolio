@@ -5,11 +5,11 @@
 }
 
 body{
-    height: 100%;
+    min-height: 100%;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background: rgb(153,230,233);
-    background: linear-gradient(180deg, rgba(153,230,233,1) 9%, rgba(51,113,128,1) 33%, rgba(22,71,83,0.9836309523809523) 62%, rgba(10,14,65,1) 87%);
+    background: linear-gradient(180deg, rgba(51,113,128,1) 11%, rgba(22,71,83,0.9836309523809523) 43%, rgba(10,14,65,1) 82%)fixed;
 }
 
 #header {
@@ -25,8 +25,8 @@ body{
 
 #header-h1 {
     text-align: center;
-    font-size: 15vh;
-    color: #2d314b;
+    font-size: 18vh;
+    color: #38f0cb;
     font-family: 'Oswald', sans-serif
 }
 
@@ -69,8 +69,8 @@ body{
 
 #about-p {
     color: #dcf2eb;
-    margin: 5%;
-    font-family: 'Oswald', sans-serif
+    margin-top: 5%;
+    font-family: 'Indie Flower', cursive;
 }
 
 #skills {
@@ -123,20 +123,167 @@ p[id*= "skill"]{
 
 #projects {
     width: 80vw;
-    height: 75vh;
+    height: 100vh;
     display: flex;
     justify-content: center;
     flex-direction: row;
     align-items: center;
-    background: #959296;
+    background: none;
     position: relative;
     left: 10vw;
     top: 100vh;
-    border-radius: 2vh;
-    box-shadow: 2vh 2vh 2vh #1E1E21FF;
+    margin-bottom: 20vh;
 }
 
 #projects-header {
-    font-size: 5vh;
+    position: relative;
+    top: 100vh;
+    left: 42vw;
+    color: #38f0cb;
+    font-size: 8vh;
+    font-family: 'Oswald', sans-serif
 }
 
+#left, #right {
+    width: 40%;
+    height: 100%;
+    background: #06062d;
+    margin: 3vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 2vh;
+    box-shadow: 2vh 2vh 2vh black;
+}
+
+#right-div-p{
+    color: #38f0cb;
+    font-size: 12vh;
+    text-align: center;
+    font-family: 'Oswald', sans-serif
+}
+
+h2 {
+    color: #38f0cb;
+    font-size: 5vh;
+    font-family: 'Oswald', sans-serif
+}
+
+#left-project-div{
+    margin-top: 5%;
+    display: flex;
+    width: 95%;
+    height: 55%;
+    border: solid .1vh #dcf2eb;
+    border-radius: 2vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#left-video {
+    width: 95%;
+    height: 40%;
+}
+
+#left-desc {
+    font-size: 2vh;
+    text-align: center;
+    color: #dcf2eb;
+    font-family: 'Oswald', sans-serif
+}
+
+.left-p {
+    font-size: 2vh;
+    text-align: center;
+    color: #dcf2eb;
+    font-family: 'Oswald', sans-serif
+}
+
+#live-fitness-link {
+    margin-top: 5%;
+    text-align: center;
+    color: #38f0cb;
+    font-family: 'Oswald', sans-serif
+}
+
+h3 {
+    margin-top: 3%;
+    color: #38f0cb;
+    font-size: 3.5vh;
+    font-family: 'Oswald', sans-serif
+}
+
+footer {
+    height: 55vh;
+    width: 100vw;
+    background: #06062d;
+    position: relative;
+    top: 95vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#foot-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#foot-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.foot-pic {
+    width: 8vh;
+    height: 8vh;
+    margin-top: 2vh;
+}
+
+.foot {
+    font-size: 2.5vh;
+    text-align: center;
+    color: #38f0cb;
+    font-family: 'Oswald', sans-serif;
+    margin-left: 3vw;
+}
+
+.footer-class {
+    display: flex;
+    flex-direction: row;
+}
+
+#linkedin {
+    margin-top: 3vh;
+}
+
+#email-div, #github-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 15%;
+    margin-bottom: 8%;
+}
+
+#email-p {
+    font-size: 2vh;
+    text-align: center;
+    color: #dcf2eb;
+    font-family: 'Oswald', sans-serif;
+    margin-left: 3vw;
+}
+#github-p {
+    font-size: 2vh;
+    text-align: center;
+    color: #dcf2eb;
+    font-family: 'Oswald', sans-serif;
+    margin-left: 3vw;
+}
