@@ -57,7 +57,7 @@ body{
 
 #about-h1{
     color: #38f0cb;
-    font-size: 5vh;
+    font-size: 7vh;
     font-family: 'Oswald', sans-serif
 }
 
@@ -74,7 +74,7 @@ body{
 }
 
 #skills {
-    width: 60vw;
+    width: 100vw;
     height: 60vh;
     display: flex;
     justify-content: center;
@@ -82,7 +82,7 @@ body{
     flex-direction: column;
     background: none;
     position: relative;
-    left: 20vw;
+    /*left: 20vw;*/
     top: 50vh;
 }
 
@@ -97,7 +97,7 @@ body{
 
 #skills-h1 {
     color: #38f0cb;
-    font-size: 5vh;
+    font-size: 7vh;
     font-family: 'Oswald', sans-serif
 }
 
@@ -112,16 +112,11 @@ section[id*= "skills"]{
 img {
     width: 20vh;
     height: 20vh;
-    transition: transform .7s ease-in-out;
-}
-
-img:hover {
-    cursor: pointer;
-    transform: rotate3d(1,1,1,360deg);
+    transition: transform 1s ease-in-out;
 }
 
 p[id*= "skill"]{
-    font-size: 2.5vh;
+    font-size: 5vh;
     color: #dcf2eb;
     margin: 5%;
     font-family: 'Oswald', sans-serif
@@ -137,7 +132,7 @@ p[id*= "skill"]{
     background: none;
     position: relative;
     left: 10vw;
-    top: 100vh;
+    top: 200vh;
     margin-bottom: 20vh;
 }
 
@@ -226,7 +221,7 @@ footer {
     width: 100vw;
     background: #06062d;
     position: relative;
-    top: 95vh;
+    top: 195vh;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -293,3 +288,62 @@ footer {
     font-family: 'Oswald', sans-serif;
     margin-left: 3vw;
 }
+
+.container {
+    width: 20vh;
+    height: 20vh;
+    perspective: 50vh;
+    margin: 10vh;
+}
+.cube {
+    position: relative;
+    width: 20vh;
+    height: 20vh;
+    transform-style: preserve-3d;
+    /*transform: rotate(0deg);*/
+    transition: all 999s 999s;
+}
+.face {
+    width: 20vh;
+    height: 20vh;
+    background: #337180;
+    /*border: 2px solid black;*/
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+    font-size: 2rem;
+}
+
+.front {
+    transform: translateZ(10vh);
+}
+.back {
+    transform: translateZ(-10vh) rotateY(180deg);
+}
+.left {
+    transform: translateX(-10vh) rotateY(-90deg);
+}
+.right {
+    transform: translateX(10vh) rotateY(90deg);
+}
+.top{
+    transform: translateY(-10vh) rotateX(90deg);
+}
+.bottom {
+    transform: translateY(10vh) rotateX(-90deg);
+}
+@keyframes turn {
+    from { transform: rotate3d(0, 0, 0, 0); }
+    to { transform: rotate3d(1, 1, 0, 360deg); }
+}
+.cube:hover {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    transform-style: preserve-3d;
+    animation: turn 2s linear;
+    transform: rotate3d(1, 1, 0, 360deg);
+}
+
