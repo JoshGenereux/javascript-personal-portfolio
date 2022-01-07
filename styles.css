@@ -112,6 +112,12 @@ section[id*= "skills"]{
 img {
     width: 20vh;
     height: 20vh;
+    transition: transform .7s ease-in-out;
+}
+
+img:hover {
+    cursor: pointer;
+    transform: rotate3d(1,1,1,360deg);
 }
 
 p[id*= "skill"]{
