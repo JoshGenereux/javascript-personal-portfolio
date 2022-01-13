@@ -1,0 +1,105 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #eaeaea;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+}
+
+#name-sect, #about, #skills {
+    display: flex;
+    width: 60vw;
+    height: 60vh;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background: white;
+    margin-top: 20vh;
+    border-radius: 2vh;
+    box-shadow: 1vh 2vh 5vh #393838;
+}
+
+#name-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 45%;
+    height: 100%;
+}
+
+#name-border-top-right {
+    position: absolute;
+    top: 21vh;
+    right: 20vw;
+    width: 10%;
+    height: 10%;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+
+#name-border-bottom-left {
+    position: absolute;
+    bottom: 21vh;
+    left: 20vw;
+    width: 10%;
+    height: 10%;
+    -webkit-transform: scaleY(-1);
+    transform: scaleY(-1);
+}
+
+#about-border-bottom-left {
+    position: absolute;
+    top: 101vh;
+    right: 20vw;
+    width: 10%;
+    height: 10%;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+
+#about-border-top-right {
+    position: absolute;
+    top: 149vh;
+    left: 20vw;
+    width: 10%;
+    height: 10%;
+    -webkit-transform: scaleY(-1);
+    transform: scaleY(-1);
+}
+
+#about-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#about-me{
+    margin-bottom: 5vh;
+    font-size: 6vmin;
+}
+
+#name-p {
+    font-size: 2vmin;
+    margin-top: 5%;
+}
+
+#name-h1 {
+    font-size: 8vmin;
+}
+
+#about-p {
+    width: 60%;
+    font-size: 2vmin;
+}
+
+footer {
+    margin-top: 20vh;
+}
