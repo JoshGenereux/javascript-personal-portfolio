@@ -100,6 +100,32 @@ body {
     font-size: 2vmin;
 }
 
+#skills-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.icon-div {
+    width: 15vw;
+    height: 15vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon {
+    width: 50%;
+    height: 80%;
+}
+
+.icon-p {
+    font-size: 2.5vmin;
+    margin-top: 1vh;
+}
+
 footer {
     margin-top: 20vh;
 }
