@@ -3,6 +3,7 @@ const skills = document.getElementById('skills-btn')
 const projects = document.getElementById('projects-btn')
 const links = document.getElementById('links-btn')
 const aTop = document.getElementById('about-home')
+const sTop = document.getElementById('skills-home')
 
 about.addEventListener('click', ()=>{
     document.getElementById('about').scrollIntoView({
@@ -29,6 +30,13 @@ projects.addEventListener('click', ()=>{
 })
 
 aTop.addEventListener('click', ()=>{
+    document.getElementById('name-sect').scrollIntoView({
+        behavior: "smooth",
+        block: "center"
+    })
+})
+
+sTop.addEventListener('click', ()=>{
     document.getElementById('name-sect').scrollIntoView({
         behavior: "smooth",
         block: "center"
