@@ -16,7 +16,7 @@ body {
     background-size: cover;
 }
 
-#name-sect, #about, #skills {
+#name-sect, #about, #skills, #projects {
     display: flex;
     width: 70vw;
     height: 60vh;
@@ -50,6 +50,27 @@ button {
 }
 
 button:hover {
+    cursor: pointer;
+    color: #2e43b7;
+    text-decoration: underline;
+}
+
+#about-home {
+    position: absolute;
+    top: 152vh;
+    right: 25vw;
+}
+
+.home-button {
+    height: 4vh;
+    width: 10vw;
+    background: none;
+    border: none;
+    font-size: 2.5vmin;
+    font-family: 'Cardo', serif;
+}
+
+.home-button:hover {
     cursor: pointer;
     color: #2e43b7;
     text-decoration: underline;
