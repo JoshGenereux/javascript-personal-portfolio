@@ -230,6 +230,84 @@ button:hover {
     font-family: 'Cardo', serif;
 }
 
+#project-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+    width: 70%;
+}
+
+#project-video, #project-info{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#projects-vid {
+    height: 80%;
+    width: 100%;
+}
+
+#project-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#project-header {
+    font-size: 4.5vmin;
+    font-family: 'MedievalSharp', cursive;
+    margin-bottom: 3vh;
+}
+
+#project{
+    position: absolute;
+    top: 262vh;
+    margin-bottom: 5vh;
+    font-size: 6vmin;
+    font-family: 'MedievalSharp', cursive;
+}
+
+#tech {
+    font-size: 3vmin;
+    font-family: 'MedievalSharp', cursive;
+    font-weight: bolder;
+}
+
+.tech-stack {
+    font-size: 2.5vmin;
+    font-family: 'Cardo', serif;
+}
+
+#project-link {
+    font-size: 2.5vmin;
+    font-family: 'Cardo', serif;
+    margin-top: 2vh;
+}
+
 footer {
-    margin-top: 20vh;
+    margin-top: 40vh;
+    height: 45vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+#footer-div {
+    height: 100%;
+    width: 75%;
+    background-image: url("pics/scroll3.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: inherit;
+}
+
+#footer-home {
+    position: absolute;
+    top: 398vh;
 }
