@@ -18,15 +18,15 @@ body {
 
 #name-sect, #about, #skills, #projects {
     display: flex;
-    width: 70vw;
-    height: 60vh;
+    width: 37vw;
+    height: 75vh;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
     background-image: url("pics/scroll2.png");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: inherit;
+    background-size: 60vh;
     margin-top: 20vh;
 }
 
@@ -35,7 +35,6 @@ body {
 }
 
 #skills-skills {
-    margin-bottom: 5vh;
     font-size: 6vmin;
     font-family: 'MedievalSharp', cursive;
 }
@@ -57,20 +56,20 @@ button:hover {
 
 #about-home {
     position: absolute;
-    top: 156vh;
-    right: 20vw;
+    top: 180vh;
+    right: 36vw;
 }
 
 #skills-home {
     position: absolute;
-    top: 236vh;
-    right: 20vw;
+    top: 275vh;
+    right: 36vw;
 }
 
 #project-home {
     position: absolute;
-    top: 315vh;
-    right: 20vw;
+    top: 373vh;
+    right: 44vw;
 }
 
 .home-button {
@@ -89,7 +88,7 @@ button:hover {
 }
 
 #button-div {
-    width: 40%;
+    width: 25%;
     position: absolute;
     top: 25vh;
     display: flex;
@@ -106,66 +105,6 @@ button:hover {
     align-items: center;
     width: 45%;
     height: 100%;
-}
-
-#name-border-top-right {
-    position: absolute;
-    top: 21vh;
-    right: 22.5vw;
-    width: 8%;
-    height: 8%;
-    -webkit-transform: scaleX(-1);
-    transform: scaleX(-1);
-}
-
-#name-border-bottom-left {
-    position: absolute;
-    bottom: 21vh;
-    left: 23.5vw;
-    width: 10%;
-    height: 10%;
-    -webkit-transform: scaleY(-1);
-    transform: scaleY(-1);
-}
-
-#about-border-bottom-left {
-    position: absolute;
-    top: 101vh;
-    right: 22.5vw;
-    width: 10%;
-    height: 10%;
-    -webkit-transform: scaleX(-1);
-    transform: scaleX(-1);
-}
-
-#about-border-top-right {
-    position: absolute;
-    top: 149vh;
-    left: 23.5vw;
-    width: 10%;
-    height: 10%;
-    -webkit-transform: scaleY(-1);
-    transform: scaleY(-1);
-}
-
-#skills-border-top-right{
-    position: absolute;
-    top: 229vh;
-    left: 23.5vw;
-    width: 10%;
-    height: 10%;
-    -webkit-transform: scaleY(-1);
-    transform: scaleY(-1);
-}
-
-#skills-border-bottom-left{
-    position: absolute;
-    top: 181vh;
-    right: 22.5vw;
-    width: 10%;
-    height: 10%;
-    -webkit-transform: scaleX(-1);
-    transform: scaleX(-1);
 }
 
 #about-div {
@@ -203,15 +142,16 @@ button:hover {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    align-items: flex-start;
+    align-items: center;
     flex-wrap: wrap;
-    height: 80%;
-    width: 80%;
+    height: 70%;
+    width: 75%;
+    padding-bottom: 30%;
 }
 
 .icon-div {
-    width: 15vw;
-    height: 20vh;
+    width: 8vw;
+    height: 12vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -232,15 +172,23 @@ button:hover {
 
 #project-div {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 80%;
-    width: 70%;
+    height: 90%;
+    width: 90%;
 }
 
-#project-video, #project-info{
-    height: 100%;
+#project-video{
+    height: 40%;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#project-info{
+    height: 50%;
     width: 50%;
     display: flex;
     justify-content: center;
@@ -257,18 +205,18 @@ button:hover {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    width: 100%;
 }
 
 #project-header {
     font-size: 4.5vmin;
     font-family: 'MedievalSharp', cursive;
-    margin-bottom: 3vh;
+    width: 100%;
+    text-align: center;
+    text-decoration: underline;
 }
 
 #project{
-    position: absolute;
-    top: 262vh;
-    margin-bottom: 5vh;
     font-size: 6vmin;
     font-family: 'MedievalSharp', cursive;
 }
@@ -280,14 +228,15 @@ button:hover {
 }
 
 .tech-stack {
-    font-size: 2.5vmin;
+    font-size: 2vmin;
     font-family: 'Cardo', serif;
 }
 
 #project-link {
     font-size: 2.5vmin;
     font-family: 'Cardo', serif;
-    margin-top: 2vh;
+    padding-bottom: 3vh;
+    padding-top: 3vh;
 }
 
 footer {
@@ -313,7 +262,7 @@ footer {
 
 #footer-home {
     position: absolute;
-    top: 398vh;
+    top: 458vh;
 }
 
 .foot-link {
